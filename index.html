@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylized File Upload</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="upload-container" onclick="document.getElementById('fileInput').click()" ondrop="handleDrop(event)" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)">
+    <img src="https://github.com/L0WK3Y-IAAN/PyBuilder/blob/main/assets/PBL.png?raw=true" style="width: 50%;" class="upload-icon">
+    <div class="upload-text">Click or drag to upload a file</div>
+    <div class="message-box" id="messageBox"></div>
+    <div class="spinner" id="spinner"></div>
+    <input type="file" id="fileInput" onchange="handleFileChange(this)">
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
